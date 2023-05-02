@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Image1 from "../../../assets/1.png";
+import Image2 from "../../../assets/2.png";
+import Image3 from "../../../assets/3.png";
 
 const LeftNav = () => {
   const [catagories, setCatagories] = useState([]);
@@ -24,6 +28,45 @@ const LeftNav = () => {
             </Link>
           </p>
         ))}
+      </div>
+      <div>
+        <Row>
+          <Col>
+            <Card className="m-4 mx-2">
+              <Card.Img variant="top" src={Image1} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card className="m-4 mx-2">
+              <Card.Img variant="top" src={Image2} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card className="my-4 mx-2">
+              <Card.Img variant="top" src={Image3} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </div>
     </div>
   );
