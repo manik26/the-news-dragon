@@ -1,6 +1,13 @@
 import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
-import { FaGoogle, FaGithub } from "react-icons/fa";
+import {
+  FaGoogle,
+  FaGithub,
+  FaFacebookF,
+  FaBroadcastTower,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
 import Qzone from "../Footer/Qzone/Qzone";
 
 const RightNav = () => {
@@ -23,9 +30,15 @@ const RightNav = () => {
         <h4>Find Us On</h4>
         <div>
           <ListGroup>
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+            <ListGroup.Item>
+              <FaFacebookF></FaFacebookF> Facebook
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FaTwitter></FaTwitter> Twitter
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <FaInstagram></FaInstagram> instagram
+            </ListGroup.Item>
           </ListGroup>
         </div>
       </div>
